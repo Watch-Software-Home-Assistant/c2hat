@@ -1,0 +1,11 @@
+{
+  "domain": "c2hat",
+  "name": "C2hat",
+  "codeowners": ["@watch-soft"],
+  "config_flow": true,
+  "documentation": "https://github.com/watch-soft/hass-c2hat",
+  "integration_type": "service",
+  "iot_class": "cloud_push",
+  "loggers": ["c2hat"],
+  "requirements": ["slack_sdk==3.33.4", "aiofiles==24.1.0"]
+}
