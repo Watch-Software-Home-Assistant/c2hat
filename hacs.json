@@ -1,0 +1,6 @@
+{
+  "name": "C2hat",
+  "render_readme": true,
+  "homeassistant": "2024.0.0",
+  "iot_class": "cloud_push"
+}
