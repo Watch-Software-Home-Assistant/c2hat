@@ -1,0 +1,38 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_service%]"
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "api_key": "[%key:common::config_flow::data::api_key%]",
+          "base_url": "Server base URL",
+          "default_channel": "Default channel",
+          "icon": "Icon",
+          "username": "[%key:common::config_flow::data::username%]"
+        },
+        "data_description": {
+          "api_key": "The C2hat bot token (starts with `c2hat-bot-`). Generate from c2hat Preferences → Integrations → Bot tokens.",
+          "base_url": "Override the c2hat server URL. Leave the default unless you self-host.",
+          "default_channel": "The channel to post to if no channel is specified when sending a message.",
+          "icon": "Emoji shortcode (e.g. :robot_face:) or URL used as the bot avatar.",
+          "username": "Home Assistant will post to C2hat using the username specified."
+        },
+        "description": "Generate a bot token from c2hat Preferences → Integrations."
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "do_not_disturb_until": {
+        "name": "Do not disturb until"
+      }
+    }
+  }
+}
