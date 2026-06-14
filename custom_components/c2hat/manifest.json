@@ -1,7 +1,7 @@
 {
   "domain": "c2hat",
   "name": "C2hat",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "codeowners": [
     "@Watch-Software-Home-Assistant"
   ],
