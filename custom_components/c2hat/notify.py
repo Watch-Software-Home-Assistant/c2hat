@@ -239,11 +239,11 @@ class C2hatNotificationService(BaseNotificationService):
         """Send a text-only message."""
         # Home Assistant sends `title` and `message` separately. Slack drops the
         # title for text-only messages, but c2hat users want it shown — so we
-        # surface it as a bold first line above the body. c2hat renders standard
-        # markdown, hence **bold**.
+        # surface it as a bold first line above the body. c2hat uses Slack-style
+        # markdown, where *single asterisks* are bold.
         text = message
         if title:
-            text = f"**{title}**\n\n{message}" if message else f"**{title}**"
+            text = f"*{title}*\n\n{message}" if message else f"*{title}*"
         message_dict: MessageT = {"link_names": True, "text": text}
 
         if username:
